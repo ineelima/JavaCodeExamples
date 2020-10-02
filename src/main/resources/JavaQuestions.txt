@@ -1,0 +1,125 @@
+What is Polymorphism and encapsulation?
+Polymorphism means ability of an object  to behave differently in different situations. Or achieving one task in
+different ways.By using method overloading and overriding.
+Encapsulation:Encapsulation:Data hiding.combining data and methods in a single unit .
+              Declare  the variables private so that no one can access these variables outside the class.
+              Provides Security
+              Maintenance of code ,reusability and flexibility of the code.
+              You can make the variables in code the read only.You dont have set methods and you can only declare get
+              methods to access them.Its totally hidden from them .What exactly is declared and what is its implementation
+              is always hidden from them,thats why Encapsulation is also called data hiding
+
+
+Method Overloading and method Overriding
+Overloading occurs when two or more methods in one class have the same method name but different parameters.
+Overriding means having two methods with the same method name and parameters.One of the methods is in the parent class
+and the other is in the child class.
+Method Names :same in both Overloading and Overriding
+Argument Types :different in overloading and same in overriding.
+Private/static/final:no restriction in overloading but cant be overridden.
+Method overloading is known as compile time polymorphism,static polymorphism and early binding
+where as Method Overriding is known as run time polymorphism,dynamic polymorphism and late binding.
+
+Why Strings are immutable?
+Because strings are cached in string constant pool.Caching the string literals and reusing them saves lot of heap space,as
+different variables refer to same object.
+As java uses the concept of string literal so if 5 reference variables are pointing to same object so if one reference
+changes the value of object ,it will affect all the reference variables.That is why strings are immutable.
+
+Difference between String buffer and String.
+String is immutable and stringbuffer is mutable.
+String can override the equals and hashcode method but string buffer cannot.
+You have to use a ‘new‘ operator to create objects for StringBuffer and StringBuilder classes. You can’t use string
+literals to create objects to these classes.But, you can use both string literals and new operators to create objects
+to String class.
+We can convert string buffer to string by calling toString() method but viceversa is not allowed.
+As objects of StringBuffer  are created using only new operators, they are stored in heap memory.
+ Whereas objects of String class are created using both string literals and new operators, they are stored in a string
+ constant pool as well as heap memory.
+
+
+
+ Difference between Array and ArrayList
+
+ Fixed in size 							    Growable in nature
+ WRT memory not recommended				     recommended
+ WRT Performance recommended(fixed in size)	 not recommended
+ It can hold homogeneous elements			 both homogeneous and   hetrogenous
+ Arrays can hold primitive data types		 hold objects(non primitive)
+ No underlying data structures				 It will have
+ No readymade methods					     It will have
+
+ Difference between HashMap and HashTable
+
+ HashTable							HashMap
+ Synchronized 						NonSynchronized
+ Legacy class						not a legacy class
+ Don't allow null keys 				Allow one null key and multiple null values gives nullpointer exception
+ Capacity is 11 and load factor is .75		default capacity is 16
+
+
+Vector:
+Implements List interface
+Synchronised
+Legacy class
+Default capacity is 10 and doubles its size if 11 th element is added.
+Vector operations gives poor performance as they are thread-safe.
+Stack is child class of Vector.
+
+Set:
+Set
+Unordered collection of objects
+Not allow duplicates
+Implemented by HashSet ,Linked HashSet Tree Set (Sorted Set)
+Add, remove,clear, size are its methods.
+
+Abstract class
+Abstract class can have both abstract and non abstract methods.
+Abstract class can have final non-final,static,non static variables.
+Abstract class can provide implementation of interface.
+Abstract class can be extend anothe java class  by using 'Extends keyword, and implements multiple interfaces
+Abstarct class can have class members like private and protected.
+Abstract class can have constructors.
+
+Interfaces:
+Interface can have only abstract methods. from java 8 it can have static and default methods.
+Interface have variables as final by default.
+Interface has only static and final variables.
+Interface can’t provide the implementation of abstract class.
+Interface can extend another Java interface only using 'implements' keyword.
+Interface can have class members as public by default.
+Interface doesnot have consructors.
+
+Why java is platform Independent?
+Platform independent practically means “write once run anywhere”. Java is called so because of its byte codes
+which can run on any system irrespective of its underlying operating system.
+
+What are access modifiers? Give me an example?
+An access modifier restricts the access of a class, constructor, data member and method in another class.
+In java we have four access modifiers:
+1. default
+2. private
+3. protected
+4. public
+
+What are java exceptions? Give me an example?
+It is any event that interrupts the normal flow of program execution. Example for exceptions are, arithmetic exception,
+Nullpointer exception, Divide by zero exception, etc.
+Exceptions in Java are something that is out of developers control.
+
+throw: Instruction to actually throw the exception
+The Throwable class is the superclass of all errors and exceptions in the Java .
+
+What is the difference between Error and exception?
+An Exception is an unwanted event that interrupts the normal flow of the program.
+Errors occur at runtime and not known to the compiler. All exceptions occurs at runtime but checked exceptions are
+known to compiler while unchecked are not.
+
+What is the difference between throwable ,Error and Exception?
+Throwable is super class of Exception as well as Error.
+
+
+
+
+
+
